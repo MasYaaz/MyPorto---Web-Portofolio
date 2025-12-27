@@ -3,7 +3,7 @@
 	const projects = [
 		{
 			title: 'WhatsApp Chatbot AI',
-			pict: '/src/images/chatbot.webp',
+			pict: './images/chatbot.webp',
 			description:
 				'Chatbot pintar menggunakan Ollama untuk integrasi AI lokal dengan fitur message buffering.',
 			tech: ['Bun', 'Ollama', 'Qwen 2.5', 'WhatsApp Web JS'],
@@ -13,7 +13,7 @@
 		},
 		{
 			title: 'Bukber IKPM Registration System',
-			pict: '/src/images/bukber-ikpm.webp',
+			pict: './images/bukber-ikpm.webp',
 			description:
 				'Sistem manajemen event terpadu dengan fitur check-in QR Code dan dashboard admin multi-role untuk efisiensi registrasi peserta secara realtime.',
 			tech: ['SvelteKit', 'TailwindCSS', 'Supabase', 'Qr Scanner'],
@@ -23,7 +23,7 @@
 		},
 		{
 			title: 'My Porto Web',
-			pict: '/src/images/myporto.webp',
+			pict: './images/myporto.webp',
 			description:
 				'Website portofolio yang kamu buka sekarang ini yang menerapkan konsep svelte runes secara konsisten.',
 			tech: ['Sveltekit'],

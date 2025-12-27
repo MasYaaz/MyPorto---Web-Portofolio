@@ -2,12 +2,12 @@
 	<div class="flex flex-col items-center gap-6">
 		<div class="relative aspect-square w-64 overflow-hidden sm:w-80 lg:w-100">
 			<img
-				src="/src/images/profil-light.webp"
+				src="./images/profil-light.webp"
 				alt="Foto Personal"
 				class="absolute inset-0 h-full w-full object-contain transition-opacity duration-700 ease-out dark:opacity-0"
 			/>
 			<img
-				src="/src/images/profil-dark.webp"
+				src="./images/profil-dark.webp"
 				alt="Foto Personal"
 				class="absolute inset-0 h-full w-full object-contain opacity-0 transition-opacity duration-700 ease-out dark:opacity-100"
 			/>

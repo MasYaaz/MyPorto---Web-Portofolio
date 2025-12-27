@@ -1,6 +1,6 @@
 <div class="order-3 flex w-full items-end justify-center lg:order-2 lg:w-[70%] lg:self-end">
 	<img
-		src="/src/images/fullbody.webp"
+		src="./images/fullbody.webp"
 		loading="eager"
 		fetchpriority="high"
 		alt="Foto"

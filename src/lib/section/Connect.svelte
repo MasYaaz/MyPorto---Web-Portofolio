@@ -31,7 +31,7 @@
 			class="group flex flex-col items-center rounded-2xl bg-white/5 p-8 transition-all hover:bg-white/10"
 		>
 			<img
-				src="/src/images/shutterstock.svg"
+				src="./images/shutterstock.svg"
 				alt="Shutterstock"
 				class="mb-4 h-20 w-20 transition-transform group-hover:scale-110 lg:h-16 lg:w-16"
 			/>
