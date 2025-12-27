@@ -6,7 +6,7 @@
 
 <!-- Section 1 -->
 <section
-	class="relative flex h-full min-h-screen w-full justify-center overflow-hidden bg-[url('./images/back.webp')] bg-cover bg-center px-6 lg:px-16"
+	class="relative flex h-full min-h-screen w-full justify-center overflow-hidden bg-[url('/images/back.webp')] bg-cover bg-center px-6 lg:px-16"
 	id="section_1"
 >
 	<div
