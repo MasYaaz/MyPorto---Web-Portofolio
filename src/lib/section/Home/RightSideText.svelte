@@ -4,11 +4,11 @@
 </script>
 
 <div
-	class="order-2 flex w-full flex-col items-start gap-6 text-left lg:order-3 lg:h-full lg:w-[15%] lg:items-end lg:justify-between lg:py-5 lg:pb-50 lg:text-right"
+	class="order-2 flex w-full flex-col items-center gap-6 text-center sm:mb-0 lg:order-3 lg:h-full lg:w-[18%] lg:items-end lg:justify-between lg:py-5 lg:pb-50 lg:text-right"
 >
 	<div class="flex flex-col items-start lg:items-end lg:space-y-4">
 		<p
-			class="font-primary text-3xl font-bold text-primary uppercase lg:flex lg:text-4xl dark:text-secondary"
+			class="hidden font-primary text-3xl font-bold text-primary uppercase lg:flex lg:text-4xl dark:text-secondary"
 		>
 			Interested..?
 		</p>

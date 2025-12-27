@@ -8,7 +8,15 @@
 
 	let { children } = $props();
 	onMount(() => {
+		// Jalankan sekali saat reload/load awal
+		ui.handleScroll();
+
+		// Pasang event listener seperti biasa
 		window.addEventListener('scroll', ui.handleScroll);
+
+		return () => {
+			window.removeEventListener('scroll', ui.handleScroll);
+		};
 	});
 </script>
 
@@ -27,9 +35,7 @@
 </svelte:head>
 
 <Navbar />
-<main
-	class="no-scrollbar relative flex min-h-screen w-full flex-col bg-[url('/src/images/bg.webp')] bg-cover bg-center sm:justify-center"
->
+<main class="no-scrollbar relative flex min-h-screen w-full flex-col bg-center sm:justify-center">
 	{#key page.url.pathname}
 		<div in:fade={{ duration: 300 }} class="relative z-10 h-full w-full">
 			{@render children()}

@@ -14,13 +14,13 @@
 		class:bg-transparent={ui.firstPageNavbarMode}
 		class:dark:shadow-none={ui.firstPageNavbarMode}
 		class:dark:bg-transparent={ui.firstPageNavbarMode}
-		class="fixed top-0 z-50 flex h-16 w-full justify-center bg-primary/90 px-6 shadow-xl/50 transition-all duration-200 ease-in lg:h-20 lg:px-16 dark:bg-secondary/90"
+		class="fixed top-0 z-50 flex h-18 w-full justify-center bg-primary/90 px-6 shadow-xl/50 transition-all duration-200 ease-in lg:h-20 lg:px-16 dark:bg-secondary/90"
 	>
 		<div class="container flex w-full justify-between">
 			<Logo />
 			<DekstopMenu />
 
-			<div class="flex w-[5%] items-center justify-end gap-2">
+			<div class="flex h-full w-[5%] items-center justify-end gap-4">
 				<HomeButton />
 				<DarkmodeButton />
 				<!-- Hamburger -->

@@ -2,15 +2,15 @@
 <html lang="id">
 	<head>
 		<script>
-			// Cek LocalStorage atau Preferensi Sistem User
-			if (
-				localStorage.theme === 'dark' ||
-				(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-			) {
-				document.documentElement.classList.add('dark');
-			} else {
-				document.documentElement.classList.remove('dark');
-			}
+			(function () {
+				const s = localStorage.theme;
+				const dark =
+					s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+				// Gunakan parameter kedua .toggle(className, force)
+				document.documentElement.classList.toggle('dark', dark);
+				document.documentElement.classList.toggle('navbar-scrolled', window.scrollY > 10);
+			})();
 		</script>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />

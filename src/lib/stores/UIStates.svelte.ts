@@ -1,7 +1,21 @@
+import { browser } from '$app/environment';
+
 class UIStates {
 	halamanAktif = $state('section_1');
 	menuMobileShow = $state(false);
-	firstPageNavbarMode = $state(true);
+	firstPageNavbarMode = $state(browser ? window.scrollY <= 10 : true);
+
+	constructor() {
+		if (browser) {
+			// Root effect memungkinkan logic ini jalan di luar komponen .svelte
+			$effect.root(() => {
+				$effect(() => {
+					// Setiap kali firstPageNavbarMode berubah, class di <html> ikut berubah
+					document.documentElement.classList.toggle('navbar-scrolled', !this.firstPageNavbarMode);
+				});
+			});
+		}
+	}
 
 	toggleMenuMobile = () => {
 		this.menuMobileShow = !this.menuMobileShow;
